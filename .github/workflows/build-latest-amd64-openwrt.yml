@@ -1,0 +1,17 @@
+name: build-latest-amd64-openwrt
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: todo
+      run: echo "*todo" > todo.org
+      shell: bash
+    - name : Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: todo
+        path: todo.org

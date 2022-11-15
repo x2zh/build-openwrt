@@ -1,5 +1,8 @@
 name: build-latest-amd64-openwrt
 
+# run manually
+on: workflow_dispatch
+
 jobs:
   build:
     runs-on: ubuntu-latest
